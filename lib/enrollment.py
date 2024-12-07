@@ -29,6 +29,9 @@ class Course:
 
     def get_enrollments(self):
         return self._enrollments.copy()
+    
+    def course_count(self):
+        return len(self._enrollments)
 
 
 class Enrollment:
@@ -45,3 +48,6 @@ class Enrollment:
 
     def get_enrollment_date(self):
         return self._enrollment_date
+    
+    
+    
